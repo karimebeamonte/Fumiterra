@@ -3,48 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FUMITERRA</title>
+<title>FUMITERRA | Conectados con el planeta</title>
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#767a36;
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(
+rgba(75,82,35,.65),
+rgba(75,82,35,.65)
+),
+url("img/WhatsApp Image 2025-03-10 at 1.56.32 PM.jpeg");
+
+background-size:cover;
+background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
 text-align:center;
+padding:20px;
 }
 
-img{
-max-width:250px;
-margin-bottom:20px;
+.content{
+max-width:900px;
+color:white;
+}
+
+.logo{
+width:380px;
+max-width:85%;
+margin-bottom:30px;
+filter:
+drop-shadow(0 5px 20px rgba(0,0,0,.4));
 }
 
 h1{
-font-size:48px;
-margin:0;
+font-size:4rem;
+margin-bottom:15px;
+letter-spacing:2px;
+font-weight:700;
 }
 
-p{
-font-size:22px;
+.subtitle{
+font-size:1.8rem;
+margin-bottom:35px;
+color:#d1e5b3;
+}
+
+.description{
+font-size:1.2rem;
+line-height:1.8;
+max-width:750px;
+margin:auto;
+margin-bottom:40px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+text-decoration:none;
+padding:16px 34px;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-primary{
+background:#d1e5b3;
+color:#2d3215;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn-secondary:hover{
+background:white;
+color:#2d3215;
+}
+
+@media(max-width:768px){
+
+.logo{
+width:260px;
+}
+
+h1{
+font-size:2.5rem;
+}
+
+.subtitle{
+font-size:1.2rem;
+}
+
+.description{
+font-size:1rem;
+}
+
 }
 </style>
+
 </head>
 
 <body>
 
-<div>
-<img src="img/logo%20fumiterra%20fondo%20transp.png" alt="Fumiterra">
+<section class="hero">
+
+<div class="content">
+
+<img
+src="img/logo fumiterra fondo transp.png"
+alt="Fumiterra"
+class="logo">
 
 <h1>FUMITERRA</h1>
 
-<p>Conectados con el planeta</p>
+<p class="subtitle">
+Conectados con el planeta
+</p>
 
-<p>Sitio web en construcción 🌿</p>
+<p class="description">
+
+Más de 20 años brindando soluciones profesionales para el control integral de plagas en hogares, negocios, restaurantes, clínicas y desarrollos residenciales en Puebla y alrededores.
+
+</p>
+
+<div class="buttons">
+
+<a
+class="btn btn-primary"
+href="https://wa.me/522211018343"
+target="_blank">
+
+Solicitar Cotización
+
+</a>
+
+<a
+class="btn btn-secondary"
+href="mailto:fumiterra.puebla@gmail.com">
+
+Contacto
+
+</a>
+
 </div>
+
+</div>
+
+</section>
 
 </body>
 </html>
