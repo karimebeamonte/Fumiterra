@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fumiterra | Control Profesional de Plagas</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+}
+
+.hero{
+max-width:700px;
+margin-left:8%;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#39b54a;
+color:white;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#39b54a;
+}
+
+.menu a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+section{
+padding:90px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+color:#39b54a;
+}
+
+.servicios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#39b54a;
+}
+
+.beneficios{
+background:#f3f8f3;
+}
+
+.beneficios-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.beneficio{
+text-align:center;
+}
+
+.beneficio span{
+font-size:50px;
+}
+
+.testimonios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.testimonio{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contacto{
+background:#39b54a;
+color:white;
+text-align:center;
+}
+
+.contacto h2{
+color:white;
+}
+
+footer{
+background:#258734;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.menu{
+display:none;
+}
+
+}
+</style>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">FUMITERRA</div>
+
+<div class="menu">
+<a href="#servicios">Servicios</a>
+<a href="#beneficios">Beneficios</a>
+<a href="#testimonios">Opiniones</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+
+<header>
+
+<div class="hero">
+
+<h1>Protegemos tu hogar y negocio de cualquier plaga</h1>
+
+<p>
+Control profesional de cucarachas, hormigas, roedores, termitas y más.
+Servicio seguro, rápido y garantizado.
+</p>
+
+<a href="#contacto" class="btn">
+Solicitar Cotización
+</a>
+
+</div>
+
+</header>
+
+<section id="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="servicios">
+
+<div class="card">
+<h3>🪳 Cucarachas</h3>
+<p>Tratamientos profesionales para eliminar infestaciones y prevenir su regreso.</p>
+</div>
+
+<div class="card">
+<h3>🐜 Hormigas</h3>
+<p>Control eficaz de colonias dentro y fuera de la vivienda.</p>
+</div>
+
+<div class="card">
+<h3>🐀 Roedores</h3>
+<p>Protección para hogares, comercios, bodegas e industrias.</p>
+</div>
+
+<div class="card">
+<h3>🪵 Termitas</h3>
+<p>Protegemos estructuras, muebles y construcciones.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="beneficios" id="beneficios">
+
+<h2>¿Por qué elegir Fumiterra?</h2>
+
+<div class="beneficios-grid">
+
+<div class="beneficio">
+<span>✅</span>
+<h3>Garantía</h3>
+<p>Seguimiento y respaldo en cada servicio.</p>
+</div>
+
+<div class="beneficio">
+<span>⚡</span>
+<h3>Atención rápida</h3>
+<p>Agendamos tu visita lo antes posible.</p>
+</div>
+
+<div class="beneficio">
+<span>🌱</span>
+<h3>Productos seguros</h3>
+<p>Tratamientos responsables para familias y mascotas.</p>
+</div>
+
+<div class="beneficio">
+<span>🏆</span>
+<h3>Experiencia</h3>
+<p>Soluciones eficaces para hogares y empresas.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="testimonios">
+
+<h2>Lo que dicen nuestros clientes</h2>
+
+<div class="testimonios">
+
+<div class="testimonio">
+⭐⭐⭐⭐⭐
+<p>Excelente servicio. Muy puntuales y efectivos.</p>
+</div>
+
+<div class="testimonio">
+⭐⭐⭐⭐⭐
+<p>El problema de cucarachas desapareció completamente.</p>
+</div>
+
+<div class="testimonio">
+⭐⭐⭐⭐⭐
+<p>Muy recomendables. Atención rápida y profesional.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contacto" id="contacto">
+
+<h2>Solicita tu Cotización</h2>
+
+<p><strong>Teléfono:</strong> TU NÚMERO AQUÍ</p>
+
+<p><strong>WhatsApp:</strong> TU NÚMERO AQUÍ</p>
+
+<p><strong>Ubicación:</strong> Puebla, México</p>
+
+<br>
+
+<a href="#" class="btn">
+Enviar WhatsApp
+</a>
+
+</section>
+
+<footer>
+© 2026 FUMITERRA | Todos los derechos reservados.
+</footer>
+
+<a class="whatsapp" href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
